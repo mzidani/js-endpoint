@@ -15,4 +15,4 @@ app.post('/webhooks/orders/create', (req, res) => {
     res.sendStatus(200)
 })
 
-app.listen(PORT, () => console.log(`Server running on port: hyyp://localhost:${PORT}`));
+app.listen(process.env.PORT || PORT, () => console.log(`Server running on port: hyyp://localhost:${PORT}`));
